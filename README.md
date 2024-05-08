@@ -17,5 +17,5 @@ To automate this process I've used the script running hooks provided by the APT 
  - /etc/apt/no-t64-libs.pl           # Perl to repack the downloaded .deb files with no dependencies to 'lib*t64' libraries
 
 If you already have some t64 libs installed on your system then you will ALSO have to manually rename all files with
-the t64 suffix in /var/lib/dpkg/info/ and then edit the /var/lib/dpkg/status and remove the suffixes from there too.
+the t64 suffix in <b>/var/lib/dpkg/info/</b> and then edit the <b>/var/lib/dpkg/status</b> and remove the suffixes from there too.
 This step is only needed once if your system already has some t64 libraries installed.
