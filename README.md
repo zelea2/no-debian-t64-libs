@@ -14,7 +14,7 @@ got fed up and decided to skip this "t64" transition period even if this means s
 To automate this process I've used the script running hooks provided by the APT package and added the following files:
  - /etc/apt/apt.conf.d/90-no-t64     # the hooks
  - /etc/apt/strip-t64-lists.pl       # Perl script to strip the updated lists from the t64 suffix
- - /etc/apt/no-t64-libs.pl           # Perl to repack the downloaded .deb files with no dependencies to lib*t64 libraries
+ - /etc/apt/no-t64-libs.pl           # Perl to repack the downloaded .deb files with no dependencies to 'lib*t64' libraries
 
 If you already have some t64 libs installed on your system then you will ALSO have to manually rename all files with
 the t64 suffix in /var/lib/dpkg/info/ and then edit the /var/lib/dpkg/status and remove the suffixes from there too.
