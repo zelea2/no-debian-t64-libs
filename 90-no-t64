@@ -1,0 +1,11 @@
+// Get rid of t64 libraries
+
+APT::Update
+{
+  Post-Invoke {"/etc/apt/strip-t64-lists.pl";};
+}
+
+DPkg
+{
+  Pre-Install-Pkgs {"/etc/apt/no-t64-libs.pl";};
+};
