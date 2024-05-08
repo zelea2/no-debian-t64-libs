@@ -8,7 +8,7 @@ libraries will be renamed again without the t64 suffix.
 
 This is all fine and dandy but it is creating major headaches for held packages, depreciated packages (which you still want to run) 
 or binary only programs which all need to be recompiled. I've already spent so much time hopping arround this issue that I've
-got fed up and decided to skip this "t64" transition period even if this means some programs might get the time wrong 
+got fed up and decided to skip this "t64" transition period even if this means some programs might get the time wrong
 (hasn't happened so far).
 
 To automate this process I've used the script running hooks provided by the APT package and added the following files:
