@@ -1,6 +1,6 @@
 # no-debian-t64-libs
 
-Unix date was historically encoded as a 32bit integer (representing seconds from year 1970) and it will overflow sometime in 2038
+Unix date was historically encoded as a 32bit integer (representing seconds elapsed since year 1970) and it will overflow sometime in 2038
 Debian started on February 2024 (14 years ahead?) to rename all libraries which have the unix time encoded as a 64bit integer by 
 adding the t64 suffix. This forces all programs using unix time (thousands of them) to link to these new libraries and make sure 
 the time variables use 64bit for all 64bit architectures. In a few years time when the conversion is considered finished all the
